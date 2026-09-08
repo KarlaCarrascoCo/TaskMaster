@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F5E9"
+    android:fillViewport="true">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:gravity="center_horizontal"
+      android:padding="30dp">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/imgLogin"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="45dp"
+        android:contentDescription="Logo TaskMaster"
+        android:src="@android:drawable/ic_menu_agenda"
+        app:tint="#2E7D32" />
+
+    <!-- Saludo dinámico -->
+    <TextView
+        android:id="@+id/txtSaludo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="¡Hola! 👋"
+        android:textColor="#1B5E20"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtMensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Ingresa para comenzar a organizar tu día"
+        android:textColor="#607D63"
+        android:textSize="15sp" />
+
+    <!-- Tarjeta del formulario -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:background="#FFFFFF"
+        android:elevation="6dp"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Usuario"
+          android:textColor="#2E7D32"
+          android:textSize="15sp"
+          android:textStyle="bold" />
+
+      <EditText
+          android:id="@+id/edtUsuario"
+          android:layout_width="match_parent"
+          android:layout_height="55dp"
+          android:layout_marginTop="5dp"
+          android:hint="Escribe tu usuario"
+          android:inputType="textPersonName"
+          android:padding="12dp" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="18dp"
+          android:text="Contraseña"
+          android:textColor="#2E7D32"
+          android:textSize="15sp"
+          android:textStyle="bold" />
+
+      <EditText
+          android:id="@+id/edtPassword"
+          android:layout_width="match_parent"
+          android:layout_height="55dp"
+          android:layout_marginTop="5dp"
+          android:hint="Escribe tu contraseña"
+          android:inputType="textPassword"
+          android:padding="12dp" />
+
+      <CheckBox
+          android:id="@+id/chkRecordarme"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="8dp"
+          android:text="Recordarme"
+          android:textColor="#4E6B50" />
+
+      <Button
+          android:id="@+id/btnIngresar"
+          android:layout_width="match_parent"
+          android:layout_height="58dp"
+          android:layout_marginTop="18dp"
+          android:backgroundTint="#388E3C"
+          android:text="🔐  INGRESAR"
+          android:textColor="#FFFFFF"
+          android:textSize="16sp"
+          android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/txtCrearCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="#E8F5E9"
+        android:text="¿Primera vez aquí?  Crear cuenta"
+        android:textColor="#2E7D32"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:elevation="0dp" />
+
+  </LinearLayout>
+
+</ScrollView>

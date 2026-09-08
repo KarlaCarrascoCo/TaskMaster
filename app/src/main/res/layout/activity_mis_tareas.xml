@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F5E9"
+    android:orientation="vertical"
+    android:padding="25dp">
+
+
+    <!-- TÍTULO -->
+
+    <TextView
+        android:id="@+id/txtTituloMisTareas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="📋 Mis tareas"
+        android:textColor="#1B5E20"
+        android:textSize="29sp"
+        android:textStyle="bold" />
+
+
+    <!-- CANTIDAD -->
+
+    <TextView
+        android:id="@+id/txtCantidadTareas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:text="0 tareas"
+        android:textColor="#607D63"
+        android:textSize="15sp" />
+
+
+    <!-- LISTA -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerTareas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="10dp" />
+
+
+    <!-- MENSAJE SIN TAREAS -->
+
+    <TextView
+        android:id="@+id/txtSinTareas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="🌱\n\nTodavía no tienes tareas.\n\n¡Crea tu primera tarea!"
+        android:textColor="#607D63"
+        android:textSize="17sp"
+        android:visibility="gone" />
+
+
+    <!-- VOLVER -->
+
+    <Button
+        android:id="@+id/btnVolverDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#388E3C"
+        android:text="← VOLVER AL DASHBOARD"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+</LinearLayout>
